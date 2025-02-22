@@ -28,7 +28,7 @@ namespace NuevoIntento.Models
 
 
         [Required(ErrorMessage = "El Teléfono es requerido")]
-        [MaxLength(10, ErrorMessage = "La cantidad máxima es 10 caracteres")]
+        [StringLength(10, MinimumLength = 10, ErrorMessage = "El Teléfono debe tener exactamente 10 caracteres")]
         [Display(Name = "Teléfono")]
         public string Telefono { get; set; }
 
